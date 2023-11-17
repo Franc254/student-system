@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}Units{% endblock %}
+
+{% block content %}
+<h2>Units Page</h2>
+<div>
+    <p>Your unit details are below:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Unit Code</th>
+                <th>Unit Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ units[0] }}</td>
+                <td>{{ units[1] }}</td>
+            </tr>
+            <tr>
+                <td>{{ units[2] }}</td>
+                <td>{{ units[3] }}</td>
+            </tr>
+            <tr>
+                <td>{{ units[4] }}</td>
+                <td>{{ units[5] }}</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</div>
+{% endblock %}

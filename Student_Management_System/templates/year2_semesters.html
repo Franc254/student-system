@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block title %}Year 2 Semesters{% endblock %}
+
+{% block content %}
+
+<section id="semester1_units">
+    <h2>Semester 1 Units:</h2>
+    <form action="{{ url_for('register_y2_1') }}" method="POST">
+        <input type="checkbox" name="cplus" id="cplus" value="Introduction to C++">
+        <label for="cplus">CSC 201 Introduction to C++</label><br><br>
+        <input type="checkbox" name="javascript" id="javascript" value="Introduction to Javascript">
+        <label for="javascript">CSC 202 Introduction to Javascript</label><br><br>
+        <input type="checkbox" name="css" id="css" value="Introduction to CSS">
+        <label for="css">SIT 211 Introduction to CSS</label><br><br>
+        <input type="checkbox" name="ethics" id="ethics" value="IT Ethics">
+        <label for="ethics">SIT 212 IT Ethics</label><br><br>
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+<section id="semester2_units">
+    <h2>Semester 2 Units:</h2>
+    <form action="{{ url_for('register_y2_2') }}" method="POST">
+        <input type="checkbox" name="os" id="os" value="Operating Sytems">
+        <label for="os">CSC 203 Operating Systems</label><br><br>
+        <input type="checkbox" name="distributed" id="distributed" value="Distributed Systems">
+        <label for="distributed">CSC 204 Distributed Systems</label><br><br>
+        <input type="checkbox" name="networking" id="networking" value="Introduction to Networking">
+        <label for="networking">SIT 213 Introduction to Networking</label><br><br>
+        <input type="checkbox" name="ims" id="ims" value="Introduction to Information Management Systems">
+        <label for="ims">SIT 214 Introduction to Information Management Systems</label><br><br>
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+{% endblock %}

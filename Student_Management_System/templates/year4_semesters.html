@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block title %}Year 4 Semesters{% endblock %}
+
+{% block content %}
+
+<section id="semester1_units">
+    <h2>Semester 1 Units:</h2>
+    <form action="{{ url_for('register_y4_1')}}" method="POST">
+        <input type="checkbox" name="graphics" id="graphics" value="Computer Graphics">
+        <label for="graphics">CSC 401 Computer Graphics</label><br><br>
+        <input type="checkbox" name="iot" id="iot" value="Internet of Things">
+        <label for="iot">CSC 402 Internet of Things</label><br><br>
+        <input type="checkbox" name="erp" id="erp" value="Enterprise Resource Planning">
+        <label for="erp">SIT 411 Enterprise Resource Planning</label><br><br>
+        <input type="checkbox" name="apps" id="apps" value="Mobile Programming Applications">
+        <label for="apps">SIT 412 Mobile Programming Applications</label><br><br>
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+<section id="semester2_units">
+    <h2>Semester 2 Units:</h2>
+    <form action="{{ url_for('register_y4_2') }}" method="POST">
+        <input type="checkbox" name="project" id="project" value="Computer Project">
+        <label for="project">CSC 403 Computer Project</label><br><br>
+        <input type="checkbox" name="group" id="group" value="Group Project">
+        <label for="group">CSC 404 Group Project</label><br><br>
+        <input type="checkbox" name="cc" id="cc" value="Cloud Computing">
+        <label for="cc">SIT 413 Cloud Computing</label><br><br>
+        <input type="checkbox" name="multimedia" id="multimedia" value="Multimedia Systems">
+        <label for="multimedia">SIT 414 Multimedia Systems</label><br><br>
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+{% endblock %}

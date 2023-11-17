@@ -1,0 +1,169 @@
+body{
+    background: #435165;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.login, .register{
+    width: 80%;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+}
+.login h1, .register h1{
+    text-align: center;
+    color: #5b6574;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+.login .links, .register .links{
+    display: flex;
+    padding: 0 15px;
+    justify-content: center;
+}
+.login .links a:hover, .register .links a:hover{
+    color: #9da3ac;
+}
+.login .links a.active, .register .links a.active{
+    border-bottom: 3px solid #3274d6;
+    color: #3274d6;
+}
+.login form, .register form{
+    padding-top: 20px;
+    text-align: center;
+    height: 300px;
+}
+.login form label, .register form label{
+    padding: 10px;
+    margin: 5px;
+    background-color: #3274d6;
+    color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"], .login form input[type="email"], .register form input[type="password"], .register form input[type="text"], .register form input[type="email"]{
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+.login form input[type="submit"], .register form input[type="submit"]{
+    width: 60%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #3274d6;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 2s;
+}
+.login form input[type="submit"]:hover, .register form input[type="submit"]:hover{
+    background-color: #2868c7;
+    transition: background-color 2s;
+}
+.navtop, .nav2{
+    background-color: #2f3947;
+    height: 60px;
+    width: 100%;
+    border: 0;
+}
+.navtop div{
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+.navtop div h1, .navtop div a, .nav2 div a{
+    display: inline-flex;
+    align-items: center;
+}
+.navtop div h1{
+    flex: 1;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: #eaebed;
+    font-weight: normal;
+}
+.navtop div a, .nav2 div a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #c1c4c8;
+    font-weight: bold;
+}
+.navtop div a i{
+    padding: 2px 8px 0 0;
+}
+.navtop div a:hover{
+    color: #eaebed;
+}
+.nav2 div{
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+body.logged in{
+    background-color: #f3f4f7;
+}
+.content{
+    margin: 0 auto;
+}
+.content h2{
+    margin: 0;
+    padding: 25px 0;
+    font-size: 22px;
+    border-bottom: 1px solid #e0e0e3;
+    color: #0acbcd;
+    text-align: center;
+}
+.content > p, .content > div{
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #fff;
+}
+.content > p table td, .content > div table td{
+    padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child{
+    font-weight: bold;
+    color: #4a536e;
+    padding-right: 15px;
+}
+.content > div p{
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.menu{
+    text-align: left;
+    margin-left: 0;
+}
+.menu li{
+    list-style-type: none;
+}
+#support{
+    text-align: right;
+}
+#tel{
+    margin-top: 250px;
+}
+#email{
+    margin-bottom: 0;
+}
+.mission{
+    text-align: left;
+}
+.vision{
+    text-align: right;
+    padding: 5px;
+}

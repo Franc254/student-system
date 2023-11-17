@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Units</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+    </head> 
+    <body>
+        <form method="POST" action="{{ url_for('units') }}" >
+            <label for="year1">Year 1</label>
+            <a href="{{ url_for('year1_semesters') }}"><input type="radio" name="year" id="year1" value="1"></a><br><br>
+            <label for="year2">Year 2</label>
+            <a href="{{ url_for('year2_semesters')}}"><input type="radio" value="2" id="year2" name="year"></a><br><br>
+            <label for="year3">Year 3</label>
+            <a href="{{ url_for('year3_semesters')}}"><input type="radio" value="3" id="year3" name="year"></a><br><br>
+            <label for="year4">Year 4</label>
+            <a href="{{ url_for('year4_semesters')}}"><input type="radio" value="4" id="year4" name="year"></a><br><br>
+        </form> 
+        
+    </body>
+</html>

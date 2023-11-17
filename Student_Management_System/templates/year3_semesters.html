@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block title %}Year 3 Semesters{% endblock %}
+
+{% block content %}
+
+<section id="semester1_units">
+    <h2>Semester 1 Units:</h2>
+    <form action="{{ url_for('register_y3_1') }}" method="POST">
+        <input type="checkbox" name="system" id="system" value="System Analysis and Design">
+        <label for="system">CSC 301 System Analysis and Design</label><br><br>
+        <input type="checkbox" name="software" id="software" value="Software Engineering">
+        <label for="software">CSC 302 Software Engineering</label><br><br>
+        <input type="checkbox" name="scripting" id="scripting" value="Scripting Languages">
+        <label for="scripting">SIT 311 Scripting Languages</label><br><br>
+        <input type="checkbox" name="security" id="security" value="Cyber Security">
+        <label for="security">SIT 312 Cyber Security</label><br><br>
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+<section id="semester2_units">
+    <h2>Semester 2 Units:</h2>
+    <form action="{{ url_for('register_y3_2') }}" method="POST">
+        <input type="checkbox" name="admin" id="admin" value="Network Administration">
+        <label for="admin">CSC 303 Network Administration</label><br><br>
+        <input type="checkbox" name="research" id="research" value="Research Methods">
+        <label for="research">CSC 304 Research Methods</label><br><br>
+        <input type="checkbox" name="ai" id="ai" value="Artificial Intelligence">
+        <label for="ai">SIT 313 Artificial Intelligence</label><br><br>
+        <input type="checkbox" name="mobile" id="mobile" value="Mobile Computing">
+        <label for="mobile">SIT 314 Mobile Computing</label><br><br>
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+{% endblock %}

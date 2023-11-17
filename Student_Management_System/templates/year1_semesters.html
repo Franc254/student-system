@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block title %}Year 1 Semesters{% endblock %}
+
+{% block content %}
+
+<section id="semester1_units">
+    <h2>Semester 1 Units:</h2>
+    <form action="{{ url_for('register_y1_1') }}" method="POST">
+        <input type="checkbox" name="hiv" id="hiv" value="Introduction to HIV/AIDs">
+        <label for="hiv">CSC 101 Introduction to HIV/AIDs</label><br><br>
+        <input type="checkbox" name="communication" id="communication" value="Introduction to Communication Skills">
+        <label for="communication">CSC 102 Introduction to Communication Skills</label><br><br>
+        <input type="checkbox" name="programming" id="programming" value="Introduction to Programming and Logic">
+        <label for="programming">SIT 111 Introduction to Programming and Logic</label><br><br>
+        <input type="checkbox" name="computers" id="computers" value="Introduction to Computers">
+        <label for="computers">SIT 112 Introduction to Computers</label><br><br>
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+<section id="semester2_units">
+    <h2>Semester 2 Units:</h2>
+    <form action="{{ url_for('register_y1_2') }}" method="POST">
+        <input type="checkbox" name="calculus" id="calculus" value="Introduction to Calculus">
+        <label for="calculus">CSC 103 Introduction to Calculus</label><br><br>
+        <input type="checkbox" name="discrete" id="discrete" value="Introduction to Discrete Mathematics">
+        <label for="discrete">CSC 104 Introduction to Discrete Mathematics</label><br><br>
+        <input type="checkbox" name="html" id="html" value="Introduction to Web Programming and Design">
+        <label for="html">SIT 113 Introduction to Web Programming and Design</label><br><br>
+        <input type="checkbox" name="database" id="database" value="Introduction to Database Management">
+        <label for="database">SIT 114 Introduction to Database Management</label><br><br>
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+{% endblock %}

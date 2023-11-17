@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<figure>
+    <img src="{{ url_for('static', filename='/images/uoemlogo.png') }}" class="logo">
+    <figcaption>No 1 university in Africa!</figcaption>
+</figure>
+
+<p>Welcome back, {{ username }}!</p>
+
+<nav class="nav2">
+    <div>
+        <a href="{{ url_for('units') }}">Register Units</a>
+        <a href="{{ url_for('view_units') }}">Units</a>
+        <a href="#support">Support</a>
+    </div>
+</nav>
+
+<section class="mission">
+    <h3>MISSION</h3>
+    <p><b>"To produce well-equipped students ready for the ever-changing world!"</b></p>
+</section>
+
+<section class="vision">
+    <h3>VISION</h3>
+    <p>Enabling students to discover their power</p>
+</section>
+
+<section id="support">
+    <p id="tel">Tel: 0755141285</p>
+    <p id="email">Email: francisngugi004@gmail.com</p>
+</section>
+
+
+{% endblock %}
+
