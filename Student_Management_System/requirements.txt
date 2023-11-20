@@ -1,4 +1,4 @@
 pip == 22.0.4
-Flask
+Flask==3.0.0
 gunicorn
 mysql.connector
